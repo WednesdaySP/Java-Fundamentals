@@ -1,2 +1,2 @@
-# Wellness_Wizards
- Healthcare app with supported AI chat system
+# Java Fundamentals
+ Deep dive into Java with everyday practice and continuous learning.
