@@ -19,16 +19,7 @@ public class BackTracking {
         }
     }
 
-    //2. N-Queens problem
-    //n*n chessboard
-    //n queens
-    //print all solutions where queen is safe
-
-//    public List<List<String>> solveNQueens(int n){
-//        List<List<String>> allBoards=new ArrayList<>();
-//        char[][]board=new board[n][n];
-//        helper(board,allBoards,0);
-//    }
+    
 
     public static  void main(String []args){
         String str="ABC";
