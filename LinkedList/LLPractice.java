@@ -47,6 +47,8 @@ public class LLPractice {
         }
         curNode.next=newNode;
     }
+
+    //add in middle of LL
     public  void addMiddle(int indx,Integer data){
         if(indx>size||indx<0){
             System.out.println("Invalid index");
@@ -81,13 +83,8 @@ public class LLPractice {
         System.out.println();
 
     }
-//    public void search(int data){
-////        int indx=printList();
-//        for(int i=0;i<=size;i++){
-//            if(data!=indx)
-//        }
-//
-//    }
+
+    //to search index of an element
 public int searchList(int num){
     Node currNode=head;
     int indx=0;
@@ -102,6 +99,7 @@ public int searchList(int num){
     return -1;//if element is not found.
 
 }
+    //to delete numbers greater than given value from the LL
 public void delete(int value){
         while(head!=null && head.data>value){
             head=head.next;
@@ -118,6 +116,7 @@ public void delete(int value){
 }
 
     public static void main(String []args){
+        //using linked list util package
 //        LinkedList<String> list=new LinkedList<String>();
 
 //        list.add("is");
@@ -130,8 +129,7 @@ public void delete(int value){
 //        System.out.println(list.size());
 
 
-
-
+        //to remove
 //        list.remove(3);
 //        list.removeFirst();
 //        list.removeLast();
@@ -140,6 +138,7 @@ public void delete(int value){
 //        System.out.println(list);
 
 
+        //taking user input
         LLPractice list=new LLPractice();
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter elements in range 1-50:");
@@ -161,34 +160,6 @@ public void delete(int value){
             list.printList();
 
         }
-//        list.addFirst(3);
-//        list.addFirst(7);
-//        list.addFirst(5);
-//        list.addFirst(1);
-//        list.addLast(8);
-//        list.addLast(2);
-//        list.addLast(3);
-//        list.addLast(8);
-//        list.printList();
-
-//        int indx=list.searchList(3);
-//        if(indx!=-1){
-//            System.out.println( "Number is found at index" + indx);
-//        }
-//        else {
-//            System.out.println("Number not found.");
-//        }
-
-        //2.
-//        while(n>0&&n<=50);{
-//            list.addFirst(sc.nextInt());
-//            n--;
-//        }
-//        sc.close();
-//        System.out.println(list);
-
-
-
 
 
     }
